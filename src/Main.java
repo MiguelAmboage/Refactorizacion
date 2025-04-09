@@ -2,20 +2,20 @@ public class Main {
     /**
      * metodo para devolver la puntuacion de tenis
      */
-    public static String getScore(int m_score1, int m_score2) {
+    public static String getScore(int jugador1, int jugador2) {
         String score = "";
         int tempScore=0;
 
-        if (m_score1 == m_score2) {
-            score = scores_iguales(m_score1);
+        if (jugador1 == jugador2) {
+            score = scores_iguales(jugador1);
         }
-        else if (m_score1 >=4 || m_score2 >=4)
+        else if (jugador1 >=4 || jugador2 >=4)
         {
-            score = jugadorconventaja(m_score1, m_score2);
+            score = jugadorconventaja(jugador1, jugador2);
         }
         else
         {
-            score = puntuación(m_score1, m_score2, score);
+            score = puntuación(jugador1, jugador2, score);
 
         }
     return score;
